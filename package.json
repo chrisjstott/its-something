@@ -1,0 +1,11 @@
+{
+  "name": "its_something",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-browserify-official": "^0.1.3"
+  }
+}
