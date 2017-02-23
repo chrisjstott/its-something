@@ -21,7 +21,6 @@ html {
 }
 
 .title {
-  // background-color: #ffffff;
   background-color: transparent;
   font-weight: bold;
   font-size: 2.5rem;
@@ -31,19 +30,27 @@ html {
   line-height: 3.5;
   overflow: hidden;
   padding-top: 3rem;
+  padding-bottom: 1rem;
   
-  &::before {
+  &::before, &::after {
     content: ' ';
     display: block;
-    height: 4rem;
     width: 100%;
-    top: 14rem;
     position: absolute;
     background-color: #FFFFFF;
     transform: skewY(-26.7deg);
     transform-origin: left;
-    box-shadow: 0 5rem #FFFFFF, 0 10rem #FFFFFF, 0 15rem #FFFFFF,
-                0 -3.9rem #FFFFFF, 0 -7.8rem #FFFFFF, 0 -11.7rem #FFFFFF, 0 -15.6rem #FFFFFF;
+  }
+  
+  &::before {
+    top: 0;
+    height: 20.5rem;
+  }
+
+  &::after {
+    bottom: -4rem;
+    height: 4rem;
+    box-shadow: 0 5rem #FFFFFF, 0 10rem #FFFFFF;
   }
 }
 
